@@ -25,5 +25,5 @@ To compile our source code and build input data used for evaluation:
 This process takes around one hour on my system. 
 
 # Running experimental workflows (reproducing figures)
-The `README` files in subfolders (`figure3`, `figure5`, `figure6`, and `figure7`) provide instructions of reproducing the corrsponding figures. When reproducing the results, try to
+The `README` files in subfolders (`figure3`, `figure5`, `figure6`, and `figure7`) provide instructions of reproducing the corresponding figures. When reproducing the results, try to
 avoid running other applications on the server. 
