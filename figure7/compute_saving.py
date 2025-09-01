@@ -54,7 +54,8 @@ for workload in workload_order:
         ghost = homp  # Override ghost if not selected
 
     def fmt(x):
-        return f"{x:.2f}" if x is not None else "NA"
+        # Output empty cell instead of NA
+        return f"{x:.2f}" if x is not None else ""
 
     # Track values for geomean
     if swpf not in (None, 0): swpf_savings.append(swpf)
@@ -63,8 +64,8 @@ for workload in workload_order:
 
     output.append(f"{workload},{selected},{fmt(swpf)},{fmt(homp)},{fmt(ghost)}")
 
-# === Add empty line and compute geomean row ===
-output.append("")
+# === Add empty line (with comma) and compute geomean row ===
+output.append(",")
 
 def geomean(lst):
     prod = 1

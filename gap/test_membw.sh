@@ -10,7 +10,7 @@ exe_tpf=0
 exe_htpf=1
 exe_best=0
 
-out_path=output/figure7
+out_path=output/figure8
 
 repeat=3
 tc_repeat=3 # use this to adjust tc repeat times

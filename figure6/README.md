@@ -1,4 +1,4 @@
-Figure 6 of the paper compares the energy efficiency of Ghost Threading with different approaches 
+Figure 6 of the paper compares the performance of Ghost Threading with different approaches 
 (the baseline, state-of-the-art software prefetching technique, and parallelization technique via SMT) 
 on an idle server. 
 
@@ -23,9 +23,8 @@ the code with Hyper Threading. For example, core 0 and core 1 should be used on 
 # the first and second arguments select the two cores used 
 ./run.sh 0 1
 ```
-This script executes the related binaries and store the results in `energy_saving.csv`. The 
-energy consumption of each benchmark can be checked in `energy.csv`. On my system this took 
-around 26 hours. 
+This script executes the related binaries and store the results in `figure6.pdf` and `speedup.csv`. The execution 
+time of each benchmark can be checked in `time.csv`. On my system this took around 26 hours. 
 
 ## (Optional) Speed up the experiment process
 To accelerate the experiment process, one optional solution is to reduce the repeat time of 
@@ -39,9 +38,9 @@ very small variations across repeated runs, so reducing its repetition count has
 **This is only an optional choice if you do not have enough time to run the whole experiment.**
 
 To adjust the repeat time of `gap.tc`, change the value of `tc_repeat` variable (line 16) in 
-`path_to_the_artifact/gap/test_energy.sh`: 
+`path_to_the_artifact/gap/test.sh`: 
 ```sh
-# in path_to_the_artifact/gap/test_energy.sh
+# in path_to_the_artifact/gap/test.sh
 tc_repeat=1 # run gap.tc once instead of three times (default: 3)
 ```
 
@@ -60,7 +59,7 @@ You can adjust the configuration by following the steps below
 
 ### Inter-thread synchronization hyper-parameters
 **GAP**: edit the parameters (`syncfreqs`, `skips`, `serialize_thresholds`, and `unserialize_thresholds`) 
-from line 40 to 201 in `path_to_the_artifact/gap/test_energy.sh`. 
+from line 40 to 201 in `path_to_the_artifact/gap/test.sh`. 
 
 **HPC**: edit the source code in `path_to_the_artifact/hpc/`. 
 

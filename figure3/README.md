@@ -24,5 +24,5 @@ the code with Hyper Threading. For example, core 0 and core 1 should be used on 
 # the first and second arguments select the two cores used 
 ./run.sh 0 1
 ```
-This script executes the related binaries and store the results in `speedup.csv`. The execution 
+This script executes the related binaries and store the results in `figure3.pdf` and `speedup.csv`. The execution 
 time of each benchmark can be checked in `time.csv`. On my system this took around 40 seconds. 

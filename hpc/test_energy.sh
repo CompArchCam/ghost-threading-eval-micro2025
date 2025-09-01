@@ -6,7 +6,7 @@ exe_homp=1
 exe_swpf=1
 exe_htpf=1
 
-out_path=$(pwd)/output/figure6
+out_path=$(pwd)/output/figure7
 #----------only set these parameters----------
 
 kernel_name=$1

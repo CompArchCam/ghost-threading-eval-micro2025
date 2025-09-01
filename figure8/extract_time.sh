@@ -7,10 +7,10 @@ echo "workload,avg time(s)" > $outfile
 methods=("baseline" "homp" "swpf" "htpf")
 
 #------------gap------------
-input_dir="../gap/output/figure7"
+input_dir="../gap/output/figure8"
 
 kernels=(bc bfs cc pr sssp tc)
-graphs=(kron twitter urand road web kronU twitterU urandU roadU webU)
+graphs=(kron twitter twitterU urand road roadU web webU)
 
 for kernel in "${kernels[@]}"; do
   for graph in "${graphs[@]}"; do
@@ -26,7 +26,7 @@ for kernel in "${kernels[@]}"; do
 done
 
 #------------HPC------------
-input_dir="../hpc/output/figure7"
+input_dir="../hpc/output/figure8"
 
 #------------camel------------
 for method in "${methods[@]}"; do

@@ -42,7 +42,7 @@ geo_homp = []
 geo_ghost = []
 
 def record_geomean(lst, val):
-    if val != "NA":
+    if val not in ("NA", ""):
         try:
             lst.append(float(val))
         except:
@@ -59,7 +59,7 @@ for workload in workload_order:
         if baseline is not None and vtime not in (None, 0):
             return format_speedup(baseline / vtime)
         else:
-            return "NA"
+            return ""
 
     swpf_speedup = compute_speedup("swpf")
     homp_speedup = compute_speedup("homp")
@@ -78,13 +78,13 @@ import math
 
 def geomean(lst):
     if not lst:
-        return "NA"
+        return ""
     product = 1.0
     for x in lst:
         product *= x
     return format_speedup(product ** (1 / len(lst)))
 
-output.append("")  # Empty row before geomean
+output.append(",")  # Empty line before geomean
 geo_row = f"geomean,-,{geomean(geo_swpf)},{geomean(geo_homp)},{geomean(geo_ghost)}"
 output.append(geo_row)
 
