@@ -2,10 +2,7 @@ This repository contains the source code and scripts needed to run several of
 the experiments from the paper "Ghost Threading: Helper-Thread Prefetching for Real Systems" 
 submitted to MICRO2025.
 
-We aim to regenerate results for Figure 3, Figure 6, Figure 7, and Figure 8. Since this technique targets on 
-real systems and involoves a lot of system-dependent configurations, we'd expect the results to have 
-quite some significant variation across different hardware. Hopefully the main trends of the 
-paper will be visible in your output. 
+We aim to regenerate results for Figure 3 and the first three bars of Figures 6 to 8. Since this technique targets on real systems and involoves a lot of system-dependent configurations, we'd expect the results to have quite some significant variation across different hardware. Hopefully the main trends of the paper will be visible in your output.
 
 # Requirements
 

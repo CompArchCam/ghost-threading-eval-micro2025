@@ -1,6 +1,5 @@
 Figure 6 of the paper compares the performance of Ghost Threading with different approaches 
-(the baseline, state-of-the-art software prefetching technique, and parallelization technique via SMT) 
-on an idle server. 
+(the baseline, state-of-the-art software prefetching technique, and parallelization technique via SMT) on an idle server. We aim to reproduce the results of the first three bars presented in this figure (i.e., the Ghost Threading compiler results are not included).
 
 # Check core affinity
 Before running the experiment, check the core affinity on your system in order to 
