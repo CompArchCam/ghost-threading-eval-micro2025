@@ -9,8 +9,8 @@ We aim to regenerate results for Figure 3 and the first three bars of Figures 6 
 To run these scripts you will need:
 
 1. A physical system with x86-64 Intel processor, which has at least 8 cores and supports Hyper 
-Threading and the [`serialize`](https://www.intel.com/content/www/us/en/content-details/825743/intel-64-and-ia-32-architectures-software-developer-s-manual-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4.html) instruction (ideally Intel Core i7-12700 processor with 96GB memory or similar systems), running Linux (ideally Ubuntu 24.04 or 22.04). 
-2. At least 96GB memory is needed to build the input graphs for some benchmarks. 
+Threading and the [`serialize`](https://www.intel.com/content/www/us/en/content-details/825743/intel-64-and-ia-32-architectures-software-developer-s-manual-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4.html) instruction (ideally Intel Core i7-12700 processor with 94GB memory or similar systems), running Linux (ideally Ubuntu 24.04 or 22.04). 
+2. At least 94GB memory is needed to build the input graphs for some benchmarks. 
 3. Around 290GB disk space is needed (mainly for the input graphs). 
 4. The following dependencies: gcc/g++ (ideally >= v13.0), clang (ideally >= v17.0), python3, and gnuplot.
 Install the software dependencies on Ubuntu:
