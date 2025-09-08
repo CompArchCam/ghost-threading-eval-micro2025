@@ -1,6 +1,11 @@
-This repository contains the source code and scripts needed to run several of 
-the experiments from the paper "Ghost Threading: Helper-Thread Prefetching for Real Systems" 
-submitted to MICRO2025.
+This repository contains the source code and scripts needed to run several of the experiments from the paper:
+
+Ghost Threading: Helper-Thread Prefetching for Real Systems\
+Yuxin Guo, Alexandra W. Chadwick, Márton Erdős,, Utpal Bora, Akshay Bhosale, Giacomo Gabrielli and Timothy M. Jones\
+International Symposium on Microarchitecture (MICRO)\
+October 2025
+
+Please cite this paper if you produce any work that uses this repository.
 
 We aim to regenerate results for Figure 3 and the first three bars of Figures 6 to 8. Since this technique targets on real systems and involoves a lot of system-dependent configurations, we'd expect the results to have quite some significant variation across different hardware. Hopefully the main trends of the paper will be visible in your output.
 
@@ -27,11 +32,11 @@ sudo apt install linux-tools-generic
 git clone https://github.com/intel/intel-cmt-cat.git
 cd intel-cmt-cat
 
-# check installation instructions from INSTALL file
+# Check installation instructions from INSTALL file
 make
 sudo make install
 
-# test installation
+# Test installation
 membw # this shows the usage instructions
 ```
 
